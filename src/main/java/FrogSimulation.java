@@ -16,7 +16,7 @@ public class FrogSimulation
 	public boolean simulate()
 	{ 
 		public int cout = 0;
-		for(int i = 0; i < maxloops; i++){
+		for(int i = 0; i < maxHops; i++){
 			cout += hopDistance();
 			if(cout < 0){return(false);}
 			if(cout >= goalDistance){return(true);}
