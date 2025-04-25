@@ -15,7 +15,7 @@ public class FrogSimulation
 	
 	public boolean simulate()
 	{ 
-		public int cout = 0;
+		int cout = 0;
 		for(int i = 0; i < maxHops; i++){
 			cout += hopDistance();
 			if(cout < 0){return(false);}
@@ -31,7 +31,7 @@ public class FrogSimulation
 		for(int i = 0; i< num; i++){
 			if(simulate()){a++;}
 		}
-		return(((double)a)/num);
+		return((double)a/num);
 
 	}
 	
